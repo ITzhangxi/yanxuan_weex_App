@@ -18,6 +18,10 @@
 </template>
 <style scoped>
     .wrapper{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -25,6 +29,7 @@
         padding-left: 5px;
         padding-right: 5px;
         background-color: #fafafa;
+        height: 65px;
     }
     .w-ipx {
         padding-top: 84px;
@@ -41,6 +46,7 @@
         display: flex;
         background-color: rgb(237, 237, 237);
         border-radius: 4px;
+        height: 34px;
     }
     .searchBox .search{
         display: flex;
