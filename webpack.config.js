@@ -147,7 +147,13 @@ const weexConfig = {
      * See: http://webpack.github.io/docs/configuration.html#module
      */
     module: {
-        rules: [{
+        rules: [
+            {
+                test: /\.css$/,
+                use: [{
+                    loader: 'style-loader!css-loader',
+                }]
+            },{
             test: /\.js$/,
             use: [{
                 loader: 'babel-loader'
